@@ -1,4 +1,4 @@
-# chat_bot_backend
+# chat_bot_backend-api
 
 
 ## Features
@@ -15,7 +15,7 @@
 
 ## Stack
 1. Runtime Environment: `Node.js`
-2. Language: `JavaScript`
+2. Language: `TypeScript`
 3. Web Server: `Fastify`
 4. ORM: `Prisma`
 5. DB: `Postgres`
@@ -26,3 +26,31 @@
 3. Validation
 4. No Supabase
 5. Deployed to AWS or Heroku
+
+## Shcema
+#### Login
+| User          | type          | 
+| ------------- | ------------- | 
+| _id           | uuid          | 
+| name          | String        | 
+| email         | String        | 
+| password      | hash          | 
+
+
+
+ | Admin        | type          | 
+| ------------- | ------------- | 
+| Admin_id      | uuid          | 
+| name          | String        | 
+| email         | String        | 
+| password      | hash          | 
+
+
+ #### edit chat
+ | chat         | type          | 
+| ------------- | ------------- | 
+| Admin_id      | uuid  (Admin) | 
+| id_Ans        | ObjectId      | 
+| category      | String        | 
+| Answr         | String        | 
+| keys to ques  | String        | 
