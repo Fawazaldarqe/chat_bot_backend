@@ -30,7 +30,7 @@ export default async function (server: FastifyInstance) {
 //---------------------------------------------
 	server.route({
 		method: 'GET',
-		url: '/chats/:id',
+		url: '/chat/:id',
 		schema: {
 			summary: 'Returns one chat or null',
 			tags: ['Chats'],
